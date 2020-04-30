@@ -48,6 +48,13 @@ load(
     "container_pull",
 )
 
+container_pull(
+    name = "ubuntu1804",
+    digest = "sha256:7e9331c44f87dfbc932746242e6bde79f21a92dc3c318d9d27a681f9a89dc400",
+    registry = "gcr.io",
+    repository = "gcp-runtimes/ubuntu_18_0_4",
+)
+
 # For testing, don't change the sha.
 container_pull(
     name = "alpine_linux_armv6_fixed_id",
